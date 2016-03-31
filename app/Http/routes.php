@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', array(
+    'as' => 'home.index',
+    'uses' => 'HomeController@getIndex'
+));
+
+Route::group(array('prefix' => 'examples'), function(){
+    Route::get('/', array(
+        'as' => 'examples.index',
+        'uses' => 'ExamplesController@getIndex'
+    ));
+
+    Route::get('/show/{type}', array(
+        'as' => 'examples.show',
+        'uses' => 'ExamplesController@getExamples'
+    ));
+
 });
