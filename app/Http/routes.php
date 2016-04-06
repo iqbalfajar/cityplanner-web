@@ -29,6 +29,9 @@ Route::group(array('prefix' => 'examples'), function(){
 
 });
 
-Route::get('/app', function(){
+Route::get('/app', array(
+        'as' => 'app',
+    ), 
+    function(){
     return File::get(public_path() . '/app/index.html');
 });
