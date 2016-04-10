@@ -8,7 +8,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <h3>City Planner - Watch and Build Your City</h3>
+                            <h3>City Plan - Watch and Build Your City</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac porttitor dui. Ut maximus quis.
                             </p>

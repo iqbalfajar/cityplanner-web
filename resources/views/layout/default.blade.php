@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>City Planner</title>
+        <title>City Plan</title>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -26,7 +26,7 @@
                         <div class="navbar col-sm-12" role="navigation">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle"></button>
-                                <a class="brand" href="#"><img src="{{ URL::asset('assets/img/logo@2x.png') }}" width="50" height="50" alt=""> City Planner</a>
+                                <a class="brand" href="#"><img src="{{ URL::asset('assets/img/logo@2x.png') }}" width="50" height="50" alt=""> City Plan</a>
                             </div>
                             <div class="collapse navbar-collapse pull-right">
                                 <ul class="nav pull-left">
@@ -67,7 +67,7 @@
                         <a href="#"><div class="fui-youtube"></div><div class="fui-youtube"></div></a>
                     </div>
                     <div class="additional-links">
-                        &copy; 2016 - City Planner
+                        &copy; 2016 - City Plan
                     </div>
                 </div>
             </footer>
