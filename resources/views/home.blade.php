@@ -39,7 +39,7 @@
                         </div>
                         <div class="col-sm-7 col-sm-offset-1 player-wrapper">
                             <div class="player">
-                                <iframe src="https://www.youtube.com/embed/8mSc-yPrpJs" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                <!-- <iframe src="https://www.youtube.com/embed/8mSc-yPrpJs" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
                             </div>
                         </div>
                     </div>

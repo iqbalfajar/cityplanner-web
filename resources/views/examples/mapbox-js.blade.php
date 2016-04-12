@@ -197,7 +197,9 @@
 <!--   <pre id='output' class='ui-output'></pre> -->
   <script>
   var accessToken = 'pk.eyJ1IjoiaXFiYWxmYWphciIsImEiOiJjaWx3ZTA1c2kwMXFqdWJrc29yMXlrc216In0.x27mOpcQja1glCL7NO-MLA';
+  // var accessToken = 'pk.eyJ1IjoiaGFuZmlldiIsImEiOiJQYlFjVlNvIn0.ukrwZz0v6BXZEOsJHBdgDg';
   var mapId = 'iqbalfajar.pfjol93d';
+  // var mapId = 'hanfiev.0598c39c';
   // var mapId = 'mapbox.streets';
   L.mapbox.accessToken = accessToken;
 

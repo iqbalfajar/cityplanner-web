@@ -1,10 +1,16 @@
 /*Home*/
-.home {
-    background: url(../img/menu.png);
+.home-splash {
+    background: url(../img/splash.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background
+}
+
+.home {
+  background: url(../img/menu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .home-button {
     margin-top: 200px;
@@ -15,12 +21,10 @@
 }
 
 .city-build-btn {
-    content: url(../img/city_build.png);
     max-width: 100px;
     max-height: 100px;
 }
 .city-watch-btn {
-    content: url(../img/city_watch.png);
     max-width: 100px;
     max-height: 100px;
 }
@@ -37,4 +41,95 @@
 }
 .tabs .tab-item .icon.restoran {
   content: url('../img/restoran.png');
+}
+
+.bar.bar-positive {
+  border-color: #313FA0;;
+  background-color: #313FA0;;
+  background-image: linear-gradient(0deg, #313FA0, #313FA0 50%, transparent 50%);
+  color: #fff;
+}
+
+.tabs-assertive > .tabs,
+.tabs.tabs-assertive {
+  border-color: #0c0a09;
+  background-color: #0c0a09;
+  background-image: linear-gradient(0deg, #0c0a09, #0c0a09 50%, transparent 50%);
+  color: #fff; }
+.tabs-assertive > .tabs .tab-item .badge,
+.tabs.tabs-assertive .tab-item .badge {
+  background-color: #0c0a09;
+  color: #ef473a; }
+
+.tabs {
+  border-color: #444;
+  background-color: #444;
+  color: #f8f8f8;
+}
+
+.tabs .tab-item .icon.rumah {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 60%;
+  background-image: url('../img/rumah.png');
+  background-size:25%
+}
+
+.tabs .tab-item .icon.minimarket {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 60%;
+  background-image: url('../img/minimarket.png');
+  background-size:25%
+}
+
+.tabs .tab-item .icon.restoran {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 60%;
+  background-image: url('../img/restoran.png');
+  background-size:25%
+}
+
+.tabs .tab-item .icon.hotel {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 60%;
+  background-image: url('../img/hotel.png');
+  background-size:25%
+}
+
+.custompopup{
+  display : block;
+  position : absolute;
+}
+
+.item.item-cw{
+  font-size : 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.list.list-cw{
+  width:70%;
+  left:15%;
+  position: absolute;
+}
+
+.list-cw > .item-checkbox .checkbox {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  left: 12px;
+  z-index: 3;
+  margin-top: -21px;
+}
+
+.list-cw .checkbox input{
+  height: 14px;
+  width: 14px;
+}
+
+#cityWatch-button7{
+  background-color: #313fa0;
 }
