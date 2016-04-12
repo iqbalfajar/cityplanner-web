@@ -197,9 +197,7 @@
 <!--   <pre id='output' class='ui-output'></pre> -->
   <script>
   var accessToken = 'pk.eyJ1IjoiaXFiYWxmYWphciIsImEiOiJjaWx3ZTA1c2kwMXFqdWJrc29yMXlrc216In0.x27mOpcQja1glCL7NO-MLA';
-  // var accessToken = 'pk.eyJ1IjoiaGFuZmlldiIsImEiOiJQYlFjVlNvIn0.ukrwZz0v6BXZEOsJHBdgDg';
-  var mapId = 'iqbalfajar.pfjol93d';
-  // var mapId = 'hanfiev.0598c39c';
+  var mapId = 'iqbalfajar.pljp3pf5';
   // var mapId = 'mapbox.streets';
   L.mapbox.accessToken = accessToken;
 
@@ -209,6 +207,14 @@
         autocomplete: true, keepOpen: true
     }));
   L.control.locate().addTo(map);
+
+  L.control.layers({
+      'Mapbox Streets': L.mapbox.tileLayer('mapbox.streets').addTo(map),
+      'Mapbox Light': L.mapbox.tileLayer('mapbox.light')
+  }, {
+      'Bike Stations': L.mapbox.tileLayer('examples.bike-locations'),
+      'Bike Lanes': L.mapbox.tileLayer('examples.bike-lanes')
+  }).addTo(map);
 
   // Initialize the geocoder control and add it to the map.
   // var geocoderControl = L.mapbox.geocoderControl('mapbox.places');

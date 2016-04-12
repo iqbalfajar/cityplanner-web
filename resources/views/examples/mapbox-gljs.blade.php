@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,87 +14,234 @@
 </head>
 <body>
 
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.js'></script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.css' type='text/css' />
-
-<!-- leaflet locate -->
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css' rel='stylesheet' />
-<!--[if lt IE 9]>
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.ie.css' rel='stylesheet' />
-<![endif]-->
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css' rel='stylesheet' />
-
 <style>
-#geocoder-container {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin-top: 10px;
-}
+    #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+    }
 
-#geocoder-container > div {
-    min-width:50%;
-    margin-left:25%;
-}
+    #menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #menu a.active:hover {
+        background: #3074a4;
+    }
 </style>
-<div id='map'></div>
-<div id='geocoder-container'></div>
+
+<nav id="menu"></nav>
+<div id="map"></div>
 
 <script>
-
-// var accessToken = 'pk.eyJ1IjoiaXFiYWxmYWphciIsImEiOiJjaWx3ZTA1c2kwMXFqdWJrc29yMXlrc216In0.x27mOpcQja1glCL7NO-MLA';
-// var mapStyle = 'mapbox://styles/iqbalfajar/cimdbesou00jkadlzrzkh4t8s';
-var accessToken = 'pk.eyJ1IjoiaGFuZmlldiIsImEiOiJQYlFjVlNvIn0.ukrwZz0v6BXZEOsJHBdgDg';
-var mapStyle = 'mapbox://styles/hanfiev/cimd8rnoz00iqadlzxnue4u20';
-
-mapboxgl.accessToken = accessToken;
-
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuZmlldiIsImEiOiJQYlFjVlNvIn0.ukrwZz0v6BXZEOsJHBdgDg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: mapStyle,
-    center: [107.618326, -6.905419],
-    zoom: 13
+    style: 'mapbox://styles/mapbox/dark-v8',
+    zoom: 15,
+    center: [107.595454, -6.915637]
 });
 
-var geocoder = new mapboxgl.Geocoder({
-    container: 'geocoder-container' // Optional. Specify a unique container for the control to be added to.
-});
-
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.Navigation());
-
-map.addControl(geocoder);
-
-L.control.locate().addTo(map);
-
-// After the map style has loaded on the page, add a source layer and default
-// styling for a single point.
-map.on('style.load', function() {
-    map.addSource('single-point', {
-        "type": "geojson",
-        "data": {
-            "type": "FeatureCollection",
-            "features": []
-        }
+map.on('style.load', function () {
+    map.addSource('museums', {
+        type: 'vector',
+        url: 'mapbox://mapbox.2opop9hr'
     });
 
     map.addLayer({
-        "id": "point",
-        "source": "single-point",
-        "type": "circle",
-        "paint": {
-            "circle-radius": 10,
-            "circle-color": "#007cbf"
-        }
+        'id': 'museums',
+        'type': 'circle',
+        'source': 'museums',
+        'paint': {
+            'circle-radius': 8,
+            'circle-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'museum-cusco'
     });
 
-    // Listen for the `geocoder.input` event that is triggered when a user
-    // makes a selection and add a marker that matches the result.
-    geocoder.on('result', function(ev) {
-        map.getSource('single-point').setData(ev.result.geometry);
+    map.addSource('pola_ruang', {
+        type: 'vector',
+        url: 'mapbox://hanfiev.41ecc19e'
+    });
+
+    map.addLayer({
+        'id': 'Permukiman-Tinggi',
+        'type': 'fill',
+        'source': 'pola_ruang',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Permukiman-Tinggi'
+
+    });
+
+    map.addLayer({
+        'id': 'Permukiman-Sedang',
+        'type': 'fill',
+        'source': 'pola_ruang',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,67,1)'
+        },
+        'source-layer': 'Permukiman-Sedang'
+
+    });
+
+    map.addLayer({
+        'id': 'Permukiman-Rendah',
+        'type': 'fill',
+        'source': 'pola_ruang',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,40,1)'
+        },
+        'source-layer': 'Permukiman-Rendah'
+
+    });
+
+    map.addLayer({
+        'id': 'Perdagangan',
+        'type': 'fill',
+        'source': 'pola_ruang',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,80,1)'
+        },
+        'source-layer': 'Perdagangan'
+
+    });
+
+    map.addLayer({
+        'id': 'Jasa',
+        'type': 'fill',
+        'source': 'pola_ruang',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(100,148,10,1)'
+        },
+        'source-layer': 'Jasa'
+
+    });
+
+    map.addLayer({
+        'id': 'Pendidikan',
+        'type': 'fill',
+        'source': 'pola_ruang',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(100,48,10,1)'
+        },
+        'source-layer': 'Pendidikan'
+
+    });
+
+    map.addSource('contours', {
+        type: 'vector',
+        url: 'mapbox://mapbox.mapbox-terrain-v2'
+    });
+    map.addLayer({
+        'id': 'contours',
+        'type': 'line',
+        'source': 'contours',
+        'source-layer': 'contour',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#877b59',
+            'line-width': 1
+        }
     });
 });
+// mulai copy
+// When a click event occurs near a marker icon, open a popup at the location of
+// the feature, with description HTML from its properties.
+map.on('click', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { source: ['pola_ruang'] });
+    if (!features.length) {
+        return;
+    }
+
+    var feature = features[0];
+
+    var popup = new mapboxgl.Popup()
+        .setLngLat(map.unproject(e.point))
+        .setHTML(feature.properties.RENCANA)
+        .addTo(map);
+});
+
+// Use the same approach as above to indicate that the symbols are clickable
+// by changing the cursor style to 'pointer'.
+map.on('mousemove', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['Permukiman-Tinggi'] });
+    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+});
+
+//selesai copy
+
+addLayer('Permukiman Tinggi', 'Permukiman-Tinggi');
+addLayer('Permukiman Sedang', 'Permukiman-Sedang');
+addLayer('Permukiman Rendah', 'Permukiman-Rendah');
+addLayer('Perdagangan', 'Perdagangan');
+addLayer('Jasa', 'Jasa');
+addLayer('Pendidikan', 'Pendidikan');
+addLayer('Contours', 'contours');
+
+function addLayer(name, id) {
+    var link = document.createElement('a');
+    link.href = '#';
+    link.className = 'active';
+    link.textContent = name;
+
+    link.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        var visibility = map.getLayoutProperty(id, 'visibility');
+
+        if (visibility === 'visible') {
+            map.setLayoutProperty(id, 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty(id, 'visibility', 'visible');
+        }
+    };
+
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+}
+
 </script>
 
 </body>
