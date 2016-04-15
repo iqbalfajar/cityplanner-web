@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost:8100/#/menu/citybuilder -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <script>
+      // Injected Ionic Go To URL Live Reload Plugin
+      window.LiveReloadPlugin_IonicGoToUrl = (function() {
+        var GOTO_KEY = "__ionic_goto_url__";
+        var HISTORY_GO_KEY = "__ionic_history_go__";
+        var GoToUrlPlugin = function(window, host) {
+          this.window = window;
+          this.host = host;
+        }
+        GoToUrlPlugin.identifier = "__ionic_goto_url__";
+        GoToUrlPlugin.version = "1.0";
+        GoToUrlPlugin.prototype.reload = function(path) {
+          try {
+            if(path) {
+              if(path.indexOf(GOTO_KEY) === 0) {
+                this.window.document.location = path.replace(GOTO_KEY, "");
+                return true;
+              }
+              if(path.indexOf(HISTORY_GO_KEY) === 0) {
+                this.window.document.history.go( parseInt(path.replace(HISTORY_GO_KEY, ""), 10));
+                return true;
+              }
+            }
+          } catch(e) {
+            console.log(e);
+          }
+          return false;
+        };
+        return GoToUrlPlugin;
+      })();
+    </script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>City Build</title>
+
+    <link href="./City Build_files/ionic.css" rel="stylesheet">
+    <script src="./City Build_files/ionic.bundle.js"></script><style type="text/css"></style>
+
+    <!-- your app's css -->
+    <link rel="stylesheet" href="./City Build_files/style.css">
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="./City Build_files/cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- your app's js -->
+    <script src="./City Build_files/jquery.js"></script>
+    <script src="./City Build_files/app.js"></script>
+    <script src="./City Build_files/controllers.js"></script>
+    <script src="./City Build_files/routes.js"></script>
+    <script src="./City Build_files/services.js"></script>
+    <script src="./City Build_files/directives.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="./City Build_files/angular-touch.js"></script>
+    <script src="./City Build_files/angular-carousel.js"></script>
+    <script type="text/javascript" src="./City Build_files/geolocation.js"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+
+  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><style type="text/css">/* This is not a zero-length file! */</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+  <body ng-app="app" animation="slide-left-right-ios7" class="grade-a platform-browser platform-win32 platform-ready">
+  <div>
+    <div>
+        <ion-nav-bar class="bar-stable nav-bar-container hide" nav-bar-transition="ios">
+            <ion-nav-back-button class="hide"></ion-nav-back-button>
+        <div class="nav-bar-block" nav-bar="cached"><ion-header-bar class="bar-stable bar bar-header" align-title="left"><button class="button back-button hide buttons button-icon icon ion-ios-arrow-back header-item" ng-click="$ionicGoBack()">Back</button><div class="title title-left header-item"></div></ion-header-bar></div><div class="nav-bar-block" nav-bar="active"><ion-header-bar class="bar-stable bar bar-header" align-title="left"><button class="button back-button hide buttons button-icon icon ion-ios-arrow-back header-item" ng-click="$ionicGoBack()">Back</button><div class="title title-left header-item"></div></ion-header-bar></div></ion-nav-bar>
+        <ion-nav-view class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-side-menus enable-menu-with-back-views="false" class="pane view" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px);">
+    <ion-side-menu-content class="menu-content pane menu-animated" style="transform: translate3d(0px, 0px, 0px);">
+        <ion-nav-bar class="bar-positive nav-bar-container" nav-bar-transition="ios" nav-bar-direction="none" nav-swipe="">
+            <ion-nav-back-button class="hide"></ion-nav-back-button>
+            <ion-nav-buttons side="left" class="hide"></ion-nav-buttons>
+        <div class="nav-bar-block" nav-bar="cached"><ion-header-bar class="bar-positive bar bar-header" align-title="left"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item" style="transition-duration: 0ms; opacity: 0;"><i class="icon ion-ios-arrow-back"></i> <span class="back-text" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); opacity: 0;"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="buttons buttons-left header-item" style="transition-duration: 0ms; opacity: 0;"><span class="left-buttons">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </span></div><div class="title title-left header-item" style="transition-duration: 0ms; transform: translate3d(-691.117px, 0px, 0px); left: 50px; opacity: 0;">City Watch</div></ion-header-bar></div><div class="nav-bar-block" nav-bar="active"><ion-header-bar class="bar-positive bar bar-header" align-title="left"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item" style="transition-duration: 0ms;"><i class="icon ion-ios-arrow-back"></i> <span class="back-text" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);"><span class="default-title">Back</span><span class="previous-title hide"></span></span></button><div class="buttons buttons-left header-item" style="transition-duration: 0ms;"><span class="left-buttons">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </span></div><div class="title title-left header-item" style="left: 50px; transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">City Build</div></ion-header-bar></div></ion-nav-bar>
+        <ion-nav-view name="side-menu21" class="view-container" nav-view-transition="ios" nav-view-direction="none" nav-swipe=""><ion-view id="page2" class="pane" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px);">
+    <ion-content overflow-scroll="true" class="scroll-content ionic-scroll overflow-scroll  has-header"><div class="scroll">
+        <ion-tabs class="tabs-icon-top tabs-bottom tabs-standard"><div class="tab-nav tabs">
+          <ion-tab icon-on="rumah" icon-off="rumah"></ion-tab>
+
+          <ion-tab icon="minimarket"></ion-tab>
+
+          <ion-tab icon="hotel"></ion-tab>
+
+          <!--<ion-tab title="Restoran" icon="restoran">
+              <div>
+                  <iframe width="100%" height="auto" style="min-height: 500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|16|-6.9042102|107.62526609999998"></iframe>
+
+              </div>
+
+              <a ui-sref="menu.detailZona" id="login-button9" class="button button-positive  button-block button-clear">Detail Zona</a>
+          </ion-tab> -->
+
+        <a ng-class="{&#39;tab-item-active&#39;: isTabActive(), &#39;has-badge&#39;:badge, &#39;tab-hidden&#39;:isHidden()}" ng-disabled="disabled()" class="tab-item" icon-on="rumah" icon-off="rumah"><!-- ngIf: badge --><!-- ngIf: getIconOn() && isTabActive() --><!-- ngIf: getIconOff() && !isTabActive() --><i class="icon rumah" ng-if="getIconOff() &amp;&amp; !isTabActive()"></i><!-- end ngIf: getIconOff() && !isTabActive() --><span class="tab-title ng-binding" ng-bind-html="title">Rumah</span></a><a ng-class="{&#39;tab-item-active&#39;: isTabActive(), &#39;has-badge&#39;:badge, &#39;tab-hidden&#39;:isHidden()}" ng-disabled="disabled()" class="tab-item tab-item-active" icon="minimarket"><!-- ngIf: badge --><!-- ngIf: getIconOn() && isTabActive() --><i class="icon minimarket" ng-if="getIconOn() &amp;&amp; isTabActive()"></i><!-- end ngIf: getIconOn() && isTabActive() --><!-- ngIf: getIconOff() && !isTabActive() --><span class="tab-title ng-binding" ng-bind-html="title">Minimarket</span></a><a ng-class="{&#39;tab-item-active&#39;: isTabActive(), &#39;has-badge&#39;:badge, &#39;tab-hidden&#39;:isHidden()}" ng-disabled="disabled()" class="tab-item" icon="hotel"><!-- ngIf: badge --><!-- ngIf: getIconOn() && isTabActive() --><!-- ngIf: getIconOff() && !isTabActive() --><i class="icon hotel" ng-if="getIconOff() &amp;&amp; !isTabActive()"></i><!-- end ngIf: getIconOff() && !isTabActive() --><span class="tab-title ng-binding" ng-bind-html="title">Hotel</span></a></div><div padding="true" class="pane tab-content" nav-view="cached">
+                <div>
+                      <iframe width="100%" height="auto" style="min-height: 500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./City Build_files/mapbox-gljs-rumah.html"></iframe>
+
+                      <!-- <leaflet id="map{{trailId}}" defaults="defaults" center="center" height="100vh" markers="markers"></leaflet> -->
+                  </div>
+
+                  <a ui-sref="menu.detailZona" id="login-button9" class="button button-positive  button-block button-clear" href="http://localhost:8100/#/menu/zone-detail">Detail Zona</a>
+              </div><div class="pane tab-content" nav-view="active"><div>
+                  <iframe width="100%" height="auto" style="min-height: 500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./City Build_files/mapbox-gljs-minimarket.html"></iframe>
+
+                  <!-- <leaflet id="map{{trailId}}" defaults="defaults" center="center" height="100vh" markers="markers"></leaflet> -->
+              </div><a ui-sref="menu.detailZona" id="login-button9" class="button button-positive  button-block button-clear" href="http://localhost:8100/#/menu/zone-detail">Detail Zona</a></div></ion-tabs>
+
+
+    </div></ion-content>
+</ion-view><ion-view id="page3" class="pane" nav-view="cached" style="opacity: 0; transform: translate3d(0%, 0px, 0px);">
+    <ion-content overflow-scroll="true" padding="true" class="scroll-content ionic-scroll overflow-scroll  has-header"><div class="scroll padding">
+        <div>
+            <iframe width="100%" height="auto" style="min-height: 500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./City Build_files/mapbox-gljs-zona.html"></iframe>
+
+            <form class="list list-cw ng-pristine ng-valid" id="filterForm" hidden="" style="top: 294px;">
+              <label name="PemukimanTinggi" class="item item-checkbox item-cw"><div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle"><input value="on" name="PemukimanTinggi" type="checkbox"><i class="checkbox-icon"></i></div><div class="item-content disable-pointer-events" ng-transclude=""><span>Pemukiman Tinggi</span></div></label>
+              <label name="Perdagangan" class="item item-checkbox item-cw"><div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle"><input name="Perdagangan" type="checkbox"><i class="checkbox-icon"></i></div><div class="item-content disable-pointer-events" ng-transclude=""><span>Perdagangan dan Jasa</span></div></label>
+              <label name="Jasa" class="item item-checkbox item-cw"><div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle"><input name="Jasa" type="checkbox"><i class="checkbox-icon"></i></div><div class="item-content disable-pointer-events" ng-transclude=""><span>Perkantoran</span></div></label>
+              <label name="Jasa" class="item item-checkbox item-cw"><div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle"><input name="Jasa" type="checkbox"><i class="checkbox-icon"></i></div><div class="item-content disable-pointer-events" ng-transclude=""><span>Sarana Pelayanan Umum</span></div></label>
+              <label name="Jasa" class="item item-checkbox item-cw"><div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle"><input name="Jasa" type="checkbox"><i class="checkbox-icon"></i></div><div class="item-content disable-pointer-events" ng-transclude=""><span>Pertahanan dan Keamanan</span></div></label>
+              <label name="Jasa" class="item item-checkbox item-cw"><div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle"><input name="Jasa" type="checkbox"><i class="checkbox-icon"></i></div><div class="item-content disable-pointer-events" ng-transclude=""><span>Lindung Alami</span></div></label>
+            </form>
+        </div>
+        <ion-list class="disable-user-behavior"><div class="list"></div></ion-list>
+
+      <!--
+        <div class="list card custompopup">
+          <div class="item item-body">
+            <form class="list">
+              <ion-checkbox name="PemukimanTinggi">Pemukiman Tinggi</ion-checkbox>
+              <ion-checkbox name="Perdagangan">Perdagangan dan Jasa</ion-checkbox>
+              <ion-checkbox name="Jasa">Perkantoran</ion-checkbox>
+              <ion-checkbox name="Jasa">Sarana Pelayanan Umum</ion-checkbox>
+              <ion-checkbox name="Jasa">Pertahanan dan Keamanan</ion-checkbox>
+              <ion-checkbox name="Jasa">Lindung Alami</ion-checkbox>
+            </form>
+          </div>
+        </div>
+        -->
+
+        <div>
+          <button id="cityWatch-button7" class="button button-positive  button-block" type="button" ng-click="toogle()">Filter Zona</button>
+        </div>
+
+        <a ui-sref="menu.formLaporanPelanggaran" id="login-button9" class="button button-positive  button-block button-clear" href="http://localhost:8100/#/menu/report-form">Form Laporan</a>
+    </div></ion-content>
+</ion-view></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21" is-enabled="true" width="275" class="menu menu-left" style="width: 275px; z-index: 0;">
+        <ion-header-bar class="bar-positive bar bar-header">
+            <div class="title title-left">Menu</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left scroll-content ionic-scroll  has-header"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+            <ion-list class="disable-user-behavior"><div class="list">
+                <ion-item ui-sref="menu.login" menu-close="" class="item item-complex" href="#/menu/login"><a class="item-content">Login</a></ion-item>
+                <ion-item ui-sref="menu.cityBuilder" menu-close="" class="item item-complex" href="#/menu/citybuilder"><a class="item-content">City Build</a></ion-item>
+                <ion-item ui-sref="menu.cityWatch" menu-close="" class="item item-complex" href="#/menu/citywatch"><a class="item-content">City Watch</a></ion-item>
+            </div></ion-list>
+        </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+    </ion-side-menu>
+</ion-side-menus></ion-nav-view>
+    </div>
+</div>
+  
+<script>//<![CDATA[
+document.write('<script src="//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1"><\/script>')
+//]]></script><script src="./City Build_files/livereload.js"></script>
+
+
+<script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>

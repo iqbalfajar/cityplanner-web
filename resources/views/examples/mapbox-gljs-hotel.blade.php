@@ -213,7 +213,7 @@ map.on('click', function (e) {
 
     var popup = new mapboxgl.Popup()
         .setLngLat(map.unproject(e.point))
-        .setHTML(feature.properties.kategori)
+        .setHTML("<a href='https://www.google.com/#q="+feature.properties.kategori+"'>" + feature.properties.kategori + "</a>")
         .addTo(map);
 });
 

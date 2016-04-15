@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://cityplanner-web.herokuapp.com/examples/show/mapbox-gljs-zona -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script src="./mapbox-gl.js"></script><style type="text/css"></style>
+    <link href="./mapbox-gl.css" rel="stylesheet">
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body marginwidth="0" marginheight="0">
+
+<style>
+    #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #menu a.active:hover {
+        background: #3074a4;
+    }
+</style>
+
+
+<div id="map" class="mapboxgl-map"><div class="mapboxgl-canvas-container mapboxgl-interactive"><canvas class="mapboxgl-canvas" tabindex="0" style="position: absolute; width: 1329px; height: 500px;" width="1329" height="500"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"></div><div class="mapboxgl-ctrl-bottom-left"></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl-attrib mapboxgl-ctrl"><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://www.mapbox.com/map-feedback/#/107.6203/-6.9003/16" target="_blank">Improve this map</a></div></div></div><div class="mapboxgl-popup mapboxgl-popup-anchor-bottom" style="transform: translate(-50%, -100%) translate(529px, 254px);"><div class="mapboxgl-popup-tip"></div><div class="mapboxgl-popup-content"><button class="mapboxgl-popup-close-button">×</button>Pusat Perdagangan &amp; Jasa</div></div></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuZmlldiIsImEiOiJQYlFjVlNvIn0.ukrwZz0v6BXZEOsJHBdgDg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/emerald-v8',
+    zoom: 15,
+    center: [107.6203,  -6.9003]
+});
+
+map.on('style.load', function () {
+    map.addSource('Cibeunying', {
+        type: 'vector',
+        url: 'mapbox://hanfiev.eb1497d8'
+    });
+
+    map.addLayer({
+        'id': 'Wisata_Buatan',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Wisata_Buatan'
+
+    });
+
+map.addLayer({
+        'id': 'Transportasi',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Transportasi'
+
+    });
+
+map.addLayer({
+        'id': 'Sempadan_SUTET',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Sempadan_SUTET'
+
+    });
+
+map.addLayer({
+        'id': 'Sempadan_Sungai',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Sempadan_Sungai'
+
+    });
+
+map.addLayer({
+        'id': 'Sempadan_Rel',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Sempadan_Rel'
+
+    });
+
+map.addLayer({
+        'id': 'Sempadan_Jaringan_Jalan',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Sempadan_Jaringan_Jalan'
+
+    });
+
+map.addLayer({
+        'id': 'RTNH',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'RTNH'
+
+    });
+
+map.addLayer({
+        'id': 'RTH_Taman_Kota',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'RTH_Taman_Kota'
+
+    });
+
+map.addLayer({
+        'id': 'RTH_Privat',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'RTH_Privat'
+
+    });
+
+map.addLayer({
+        'id': 'RTH_Plasma_Nutfah',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'RTH_Plasma_Nutfah'
+
+    });
+
+map.addLayer({
+        'id': 'RTH_Pemakaman',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'RTH_Pemakaman'
+
+    });
+
+map.addLayer({
+        'id': 'RTH_Pelestarian_Alam',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'RTH_Pelestarian_Alam'
+
+    });
+
+map.addLayer({
+        'id': 'RTH_Hutan_Kota',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'RTH_Hutan_Kota'
+
+    });
+
+map.addLayer({
+        'id': 'Pusat_Perdagangan_Jasa',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Pusat_Perdagangan_Jasa'
+
+    });
+
+map.addLayer({
+        'id': 'Perumahan_Kepadatan_Tinggi',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Tinggi'
+
+    });
+
+map.addLayer({
+        'id': 'Perumahan_Kepadatan_Rendah',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Rendah'
+
+    });
+
+map.addLayer({
+        'id': 'Pertanian',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Pertanian'
+
+    });
+
+map.addLayer({
+        'id': 'Pertahanan_Keamanan',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Pertahanan_Keamanan'
+
+    });
+
+map.addLayer({
+        'id': 'Peribadatan',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Peribadatan'
+
+    });
+
+map.addLayer({
+        'id': 'Perdagangan_Jasa_Linier',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perdagangan_Jasa_Linier'
+
+    });
+
+map.addLayer({
+        'id': 'Pendidikan',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Pendidikan'
+
+    });
+
+map.addLayer({
+        'id': 'Pasar_Tradisional',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Pasar_Tradisional'
+
+    });
+
+map.addLayer({
+        'id': 'Kesehatan',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Kesehatan'
+
+    });
+
+map.addLayer({
+        'id': 'Kantor_Pemerintahan',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Kantor_Pemerintahan'
+
+    });
+
+map.addLayer({
+        'id': 'Industri',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Industri'
+
+    });
+
+map.addLayer({
+        'id': 'Gardu_Listrik',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Gardu_Listrik'
+
+    });
+
+map.addLayer({
+        'id': 'Campuran_Intensitas_Tinggi',
+        'type': 'fill',
+        'source': 'Cibeunying',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Campuran_Intensitas_Tinggi'
+
+    });
+
+
+    
+
+    
+   
+});
+// mulai copy
+// When a click event occurs near a marker icon, open a popup at the location of
+// the feature, with description HTML from its properties.
+map.on('click', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { source: ['hotel'] });
+    if (!features.length) {
+        return;
+    }
+
+    var feature = features[0];
+
+    var popup = new mapboxgl.Popup()
+        .setLngLat(map.unproject(e.point))
+        .setHTML(feature.properties.kategori)
+        .addTo(map);
+});
+
+// Use the same approach as above to indicate that the symbols are clickable
+// by changing the cursor style to 'pointer'.
+map.on('mousemove', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['Wisata_Buatan'] });
+    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+});
+
+//selesai copy
+
+
+</script>
+
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.u-ad.info/cfspushadsv2/request" + "?id=1" + "&enc=telkom2" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582ECSaLdwqSpn1UQIkceT8MsyEvFemB2yVVB8wws5gtlC%2bUjt3lj1n7PU0sBBjVhuw2qD7KI9zMs8LF0ZuVJaVk4O7rUd9pj3tPDjwmA4zxBzy4zvI1fCBM4WHIW3vkAbbEIxt677sS0e%2bmWcxk0kg2MSmZcamiKGqXmkzYoHa86bJK6%2bX4YGMCUxjcznF02MQEY%2fAuAdppmW3Gf01ygh44elr3WfIVVX980%2fnshIPRbsuFizbfucQClrUoptMY22ey1tODGVoACHI%2fIJhKdl6JltFeyty8xNBkbwGQmpoa3d7iG%2bcdgPCEE1EQ%2bknKP9WUv5Skes3h9n1NiBIF%2fVIHL7og2r3Yn%2fFPtKTgk6jVUPVdh3D%2bP5j%2fEn%2bQtk%2fYHRJw8W39jFBAgplj%2fm6vOyPUQHPGcXxHSSdK4SWYP570hPr5oUZ7uUMNPvHGi96%2bznAUo3%2bAZ28yDXWZmF7buRR43z%2b4pZcIxofP2m2mEAjHzDqyIHgKWZyhMzfW4XfH6aE6Tcc%2f1lXo0BxMuIDH1Uf%2bJEfobSAW2qUzo8YV0wNzbmI7wEe59uId0GMbLbcJ%2fg6mpx7%2brcY9%2bjaPzDp1BiVWdXM3On7P%2buUQ%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script>
+
+</body></html>

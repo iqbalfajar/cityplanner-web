@@ -10,6 +10,9 @@
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
+    <?php
+        header('X-Frame-Options: ALLOW-FROM http://google.com'); 
+    ?>
 </head>
 <body>
 
@@ -211,7 +214,7 @@ map.on('click', function (e) {
 
     var popup = new mapboxgl.Popup()
         .setLngLat(map.unproject(e.point))
-        .setHTML(feature.properties.kategori)
+        .setHTML("<a href='https://www.google.com/#q="+feature.properties.kategori+"'>" + feature.properties.kategori + "</a>")
         .addTo(map);
 });
 

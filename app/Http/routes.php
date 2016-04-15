@@ -35,3 +35,10 @@ Route::get('/app', array(
     function(){
     return File::get(public_path() . '/app/index.html');
 });
+
+Route::get('/test', array(
+        'as' => 'test',
+    ), 
+    function(){
+    return File::get(public_path() . '/test/index.html');
+});
