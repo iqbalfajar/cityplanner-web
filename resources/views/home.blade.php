@@ -27,7 +27,7 @@
                                     </div> -->
                                     <div class="form-group">
                                         <!-- <button type="submit" class="btn btn-block btn-info">Go to App</button> -->
-                                        <a class="btn btn-primary btn-lg btn-block" href="{{URL::route('app')}}">Go to App</a>
+                                        <a class="btn btn-primary btn-lg btn-block" href="{{URL::route('app')}}" target="_blank">Go to App</a>
                                     </div>
                                 </form>
                             </div>
