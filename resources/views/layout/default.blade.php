@@ -79,7 +79,7 @@
         <script src="{{ URL::asset('assets/flat-ui/js/bootstrap.min.js') }}"></script>
         <script src="{{ URL::asset('assets/common-files/js/modernizr.custom.js') }}"></script>
         <script src="{{ URL::asset('assets/common-files/js/startup-kit.js') }}"></script>
-        <script src="js/script.js') }}"></script>
+        <script src="{{ URL::asset('assets/js/script.js') }}"></script>
 
         @yield('javascript')
     </body>
