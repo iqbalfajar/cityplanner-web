@@ -34,9 +34,9 @@
                                     <li><a href="#features">FEATURES</a></li>
                                     <li><a href="#download">DOWNLOAD</a></li>
                                 </ul>
-                                <form class="navbar-form pull-left">
+                                <!-- <form class="navbar-form pull-left">
                                     <a class="btn btn-primary" href="{{URL::route('app')}}">Go to App</a>
-                                </form>
+                                </form> -->
                             </div>
                         </div>
                     </div>

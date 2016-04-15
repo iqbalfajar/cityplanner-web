@@ -7,8 +7,8 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <h3>City Plan - Watch and Build Your City</h3>
+                        <div class="col-sm-4" style="color:white;">
+                            <h3 style="color:white;">City Plan - Watch and Build Your City</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac porttitor dui. Ut maximus quis.
                             </p>
@@ -17,9 +17,9 @@
                             </p>
                             <div class="signup-form">
                                 <form>
-                                    <div class="form-group">
+                                   <!--  <div class="form-group">
                                         <input class="form-control" type="text" placeholder="Your E-mail">
-                                    </div>
+                                    </div> -->
                                     <!-- <div class="form-group">
                                         <div>
                                             <input type="password" class="form-control" placeholder="Password">
@@ -29,7 +29,8 @@
                                         </div>
                                     </div> -->
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-block btn-info">Subscribe</button>
+                                        <!-- <button type="submit" class="btn btn-block btn-info">Subscribe</button> -->
+                                        <a class="btn btn-block btn-info" href="{{URL::route('app')}}">Go to App</a>
                                     </div>
                                 </form>
                             </div>
