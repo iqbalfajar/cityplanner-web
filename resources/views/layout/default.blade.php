@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{{ URL::asset('assets/common-files/css/icon-font.css') }}">
         <!-- end -->
         <link rel="stylesheet" href="{{ URL::asset('assets/css/style.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('assets/css/custom.css') }}">
 
         @yield('stylesheet')
     </head>

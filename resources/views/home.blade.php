@@ -66,17 +66,17 @@
 
                     <div class="row plans">
                         <div class="col-sm-4">
-                            <div class="">
+                            <div class="img-row">
                                 <img src="{{ URL::asset('assets/img/mockup/menu.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="">
+                            <div class="img-row">
                                 <img src="{{ URL::asset('assets/img/mockup/3.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="">
+                            <div class="img-row">
                                 <img src="{{ URL::asset('assets/img/mockup/4.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
@@ -84,17 +84,17 @@
                     <br>
                     <div class="row plans">
                         <div class="col-sm-4">
-                            <div class="">
+                            <div class="img-row">
                                 <img src="{{ URL::asset('assets/img/mockup/6.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="">
+                            <div class="img-row">
                                 <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="">
+                            <div class="img-row">
                                 <img src="{{ URL::asset('assets/img/mockup/12.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
