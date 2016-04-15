@@ -69,36 +69,36 @@
                     </p> -->
                     <div class="row plans">
                         <div class="col-sm-4">
-                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
-                                <img src="{{ URL::asset('assets/img/mockup/menu.jpg') }}">
+                            <div class="">
+                                <img src="{{ URL::asset('assets/img/mockup/menu.jpg') }}" class="img-responsive img-thumbnail">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
-                                <img src="{{ URL::asset('assets/img/mockup/3.jpg') }}">
+                            <div class="">
+                                <img src="{{ URL::asset('assets/img/mockup/3.jpg') }}" class="img-responsive img-thumbnail">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
-                                <img src="{{ URL::asset('assets/img/mockup/4.jpg') }}">
+                            <div class="">
+                                <img src="{{ URL::asset('assets/img/mockup/4.jpg') }}" class="img-responsive img-thumbnail">
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="row plans">
                         <div class="col-sm-4">
-                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
-                                <img src="{{ URL::asset('assets/img/mockup/6.jpg') }}">
+                            <div class="">
+                                <img src="{{ URL::asset('assets/img/mockup/6.jpg') }}" class="img-responsive img-thumbnail">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
-                                <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}">
+                            <div class="">
+                                <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}" class="img-responsive img-thumbnail">
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
-                                <img src="{{ URL::asset('assets/img/mockup/12.jpg') }}">
+                            <div class="">
+                                <img src="{{ URL::asset('assets/img/mockup/12.jpg') }}" class="img-responsive img-thumbnail">
                             </div>
                         </div>
                     </div>
