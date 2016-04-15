@@ -2,21 +2,18 @@
 
 @section('content-center')
         <section id="home" class="header-11-sub bg-midnight-blue">
-                <div class="background">
+                <div class="background" style="-webkit-filter: blur(1px);">
                     &nbsp;
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4" style="color:white;">
-                            <h3 style="color:white;">City Plan - Watch and Build Your City</h3>
-                            <p>
+                            <h3 style="color:black;">City Plan - Watch and Build Your City</h3>
+                            <p style="color:white;">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac porttitor dui. Ut maximus quis.
                             </p>
-                            <p>
-                                Sign Up for more information.
-                            </p>
                             <div class="signup-form">
-                                <form>
+                                <form action="{{URL::route('app')}}">
                                    <!--  <div class="form-group">
                                         <input class="form-control" type="text" placeholder="Your E-mail">
                                     </div> -->
@@ -29,7 +26,7 @@
                                         </div>
                                     </div> -->
                                     <div class="form-group">
-                                        <!-- <button type="submit" class="btn btn-block btn-info">Subscribe</button> -->
+                                        <!-- <button type="submit" class="btn btn-block btn-info">Go to App</button> -->
                                         <a class="btn btn-block btn-info" href="{{URL::route('app')}}">Go to App</a>
                                     </div>
                                 </form>
