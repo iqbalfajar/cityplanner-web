@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,189 +57,243 @@
     }
 </style>
 
-<!-- <nav id="menu"></nav> -->
+
 <div id="map"></div>
 
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiaXFiYWxmYWphciIsImEiOiJjaWx3ZTA1c2kwMXFqdWJrc29yMXlrc216In0.x27mOpcQja1glCL7NO-MLA';
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuZmlldiIsImEiOiJQYlFjVlNvIn0.ukrwZz0v6BXZEOsJHBdgDg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/iqbalfajar/cimvh1pp001g4d2npp9wyh5c9',
-    zoom: 14,
-    center: [107.610873, -6.918836]
+    style: 'mapbox://styles/mapbox/emerald-v8',
+    zoom: 15,
+    center: [107.6203,  -6.9003]
 });
 
-// map.on('style.load', function () {
-//     map.addSource('museums', {
-//         type: 'vector',
-//         url: 'mapbox://mapbox.2opop9hr'
-//     });
+map.on('style.load', function () {
+    map.addSource('minimarket', {
+        type: 'vector',
+        url: 'mapbox://hanfiev.4322fbe6'
+    });
 
-//     map.addLayer({
-//         'id': 'museums',
-//         'type': 'circle',
-//         'source': 'museums',
-//         'paint': {
-//             'circle-radius': 8,
-//             'circle-color': 'rgba(55,148,179,1)'
-//         },
-//         'source-layer': 'museum-cusco'
-//     });
+    map.addLayer({
+        'id': 'Wisata_Buatan',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Wisata_Buatan'
 
-//     map.addSource('pola_ruang', {
-//         type: 'vector',
-//         url: 'mapbox://hanfiev.41ecc19e'
-//     });
+    });
 
-//     map.addLayer({
-//         'id': 'Permukiman-Tinggi',
-//         'type': 'fill',
-//         'source': 'pola_ruang',
-//         'paint': {
-//             'fill-opacity': 0.4,
-//             'fill-color': 'rgba(55,148,179,1)'
-//         },
-//         'source-layer': 'Permukiman-Tinggi'
+    map.addLayer({
+        'id': 'Transportasi',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Transportasi'
 
-//     });
+    });
 
-//     map.addLayer({
-//         'id': 'Permukiman-Sedang',
-//         'type': 'fill',
-//         'source': 'pola_ruang',
-//         'paint': {
-//             'fill-opacity': 0.4,
-//             'fill-color': 'rgba(55,148,67,1)'
-//         },
-//         'source-layer': 'Permukiman-Sedang'
+    map.addLayer({
+        'id': 'Pusat_Perdagangan_Jasa',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Pusat_Perdagangan_Jasa'
 
-//     });
+    });
 
-//     map.addLayer({
-//         'id': 'Permukiman-Rendah',
-//         'type': 'fill',
-//         'source': 'pola_ruang',
-//         'paint': {
-//             'fill-opacity': 0.4,
-//             'fill-color': 'rgba(55,148,40,1)'
-//         },
-//         'source-layer': 'Permukiman-Rendah'
+    map.addLayer({
+        'id': 'Perumahan_Kepadatan_Tinggi_3',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Tinggi_3'
 
-//     });
+    });
 
-//     map.addLayer({
-//         'id': 'Perdagangan',
-//         'type': 'fill',
-//         'source': 'pola_ruang',
-//         'paint': {
-//             'fill-opacity': 0.4,
-//             'fill-color': 'rgba(55,148,80,1)'
-//         },
-//         'source-layer': 'Perdagangan'
+    map.addLayer({
+        'id': 'Perumahan_Kepadatan_Tinggi_2',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Tinggi_2'
 
-//     });
+    });
 
-//     map.addLayer({
-//         'id': 'Jasa',
-//         'type': 'fill',
-//         'source': 'pola_ruang',
-//         'paint': {
-//             'fill-opacity': 0.4,
-//             'fill-color': 'rgba(100,148,10,1)'
-//         },
-//         'source-layer': 'Jasa'
+    map.addLayer({
+        'id': 'Perumahan_Kepadatan_Tinggi',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Tinggi'
 
-//     });
+    });
 
-//     map.addLayer({
-//         'id': 'Pendidikan',
-//         'type': 'fill',
-//         'source': 'pola_ruang',
-//         'paint': {
-//             'fill-opacity': 0.4,
-//             'fill-color': 'rgba(100,48,10,1)'
-//         },
-//         'source-layer': 'Pendidikan'
+    map.addLayer({
+        'id': 'Perumahan_Kepadatan_Sedang_2',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Sedang_2'
 
-//     });
+    });
 
-//     map.addSource('contours', {
-//         type: 'vector',
-//         url: 'mapbox://mapbox.mapbox-terrain-v2'
-//     });
-//     map.addLayer({
-//         'id': 'contours',
-//         'type': 'line',
-//         'source': 'contours',
-//         'source-layer': 'contour',
-//         'layout': {
-//             'line-join': 'round',
-//             'line-cap': 'round'
-//         },
-//         'paint': {
-//             'line-color': '#877b59',
-//             'line-width': 1
-//         }
-//     });
-// });
-// // mulai copy
-// // When a click event occurs near a marker icon, open a popup at the location of
-// // the feature, with description HTML from its properties.
-// map.on('click', function (e) {
-//     var features = map.queryRenderedFeatures(e.point, { source: ['pola_ruang'] });
-//     if (!features.length) {
-//         return;
-//     }
+    map.addLayer({
+        'id': 'Perumahan_Kepadatan_Sedang',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Sedang'
 
-//     var feature = features[0];
+    });
 
-//     var popup = new mapboxgl.Popup()
-//         .setLngLat(map.unproject(e.point))
-//         .setHTML(feature.properties.RENCANA)
-//         .addTo(map);
-// });
+    map.addLayer({
+        'id': 'Perumahan_Kepadatan_Rendah',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perumahan_Kepadatan_Rendah'
 
-// // Use the same approach as above to indicate that the symbols are clickable
-// // by changing the cursor style to 'pointer'.
-// map.on('mousemove', function (e) {
-//     var features = map.queryRenderedFeatures(e.point, { layers: ['Permukiman-Tinggi'] });
-//     map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-// });
+    });
 
-// //selesai copy
+    map.addLayer({
+        'id': 'Peribadatan',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Peribadatan'
 
-// // addLayer('Permukiman Tinggi', 'Permukiman-Tinggi');
-// // addLayer('Permukiman Sedang', 'Permukiman-Sedang');
-// // addLayer('Permukiman Rendah', 'Permukiman-Rendah');
-// // addLayer('Perdagangan', 'Perdagangan');
-// // addLayer('Jasa', 'Jasa');
-// // addLayer('Pendidikan', 'Pendidikan');
-// // addLayer('Contours', 'contours');
+    });
 
-// // function addLayer(name, id) {
-// //     var link = document.createElement('a');
-// //     link.href = '#';
-// //     link.className = 'active';
-// //     link.textContent = name;
+    map.addLayer({
+        'id': 'Perdagangan_Jasa_Linier',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Perdagangan_Jasa_Linier'
 
-// //     link.onclick = function (e) {
-// //         e.preventDefault();
-// //         e.stopPropagation();
+    });
 
-// //         var visibility = map.getLayoutProperty(id, 'visibility');
+   map.addLayer({
+        'id': 'Pendidikan',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Pendidikan'
 
-// //         if (visibility === 'visible') {
-// //             map.setLayoutProperty(id, 'visibility', 'none');
-// //             this.className = '';
-// //         } else {
-// //             this.className = 'active';
-// //             map.setLayoutProperty(id, 'visibility', 'visible');
-// //         }
-// //     };
+    });
 
-// //     var layers = document.getElementById('menu');
-// //     layers.appendChild(link);
-// // }
+   map.addLayer({
+        'id': 'Kesehatan',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Kesehatan'
+
+    });
+
+   map.addLayer({
+        'id': 'Kantor_Pemerintahan',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Kantor_Pemerintahan'
+
+    });
+
+   map.addLayer({
+        'id': 'Industri',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Industri'
+
+    });
+
+   map.addLayer({
+        'id': 'Campuran_Intensitas_Tinggi',
+        'type': 'fill',
+        'source': 'minimarket',
+        'paint': {
+            'fill-opacity': 0.4,
+            'fill-color': 'rgba(55,148,179,1)'
+        },
+        'source-layer': 'Campuran_Intensitas_Tinggi'
+
+    });
+   
+});
+// mulai copy
+// When a click event occurs near a marker icon, open a popup at the location of
+// the feature, with description HTML from its properties.
+map.on('click', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { source: ['hotel'] });
+    if (!features.length) {
+        return;
+    }
+
+    var feature = features[0];
+
+    var popup = new mapboxgl.Popup()
+        .setLngLat(map.unproject(e.point))
+        .setHTML(feature.properties.kategori)
+        .addTo(map);
+});
+
+// Use the same approach as above to indicate that the symbols are clickable
+// by changing the cursor style to 'pointer'.
+map.on('mousemove', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['Wisata_Buatan'] });
+    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+});
+
+//selesai copy
+
 
 </script>
 
