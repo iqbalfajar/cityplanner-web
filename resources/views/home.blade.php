@@ -64,30 +64,41 @@
             <section id="features" class="price-1">
                 <div class="container">
                     <h3>Features</h3>
-                    <p class="lead">
+<!--                     <p class="lead">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere.
-                    </p>
+                    </p> -->
                     <div class="row plans">
-                        <div class="col-sm-6">
-                            <div class="plan">
-                                <div class="title">City Builder</div>
-                                <div class="description">
-                                    Description<br>
-                                    <b>Description</b> Description<br>
-                                    <b>Description</b> Description<br>
-                                    Description
-                                </div>
+                        <div class="col-sm-4">
+                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
+                                <img src="{{ URL::asset('assets/img/mockup/menu.jpg') }}">
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="plan">
-                                <div class="title">City Watch</div>
-                                <div class="description">
-                                    Description<br>
-                                    <b>Description</b> Description<br>
-                                    <b>Description</b> Description<br>
-                                    Description
-                                </div>
+                        <div class="col-sm-4">
+                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
+                                <img src="{{ URL::asset('assets/img/mockup/3.jpg') }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
+                                <img src="{{ URL::asset('assets/img/mockup/4.jpg') }}">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row plans">
+                        <div class="col-sm-4">
+                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
+                                <img src="{{ URL::asset('assets/img/mockup/6.jpg') }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
+                                <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="plan" style="border: 2px solid #ebedee;padding: 10px 0;">
+                                <img src="{{ URL::asset('assets/img/mockup/12.jpg') }}">
                             </div>
                         </div>
                     </div>
