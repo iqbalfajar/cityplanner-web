@@ -27,7 +27,7 @@
                                     </div> -->
                                     <div class="form-group">
                                         <!-- <button type="submit" class="btn btn-block btn-info">Go to App</button> -->
-                                        <a class="btn btn-block btn-info" href="{{URL::route('app')}}">Go to App</a>
+                                        <a class="btn btn-primary btn-lg btn-block" href="{{URL::route('app')}}">Go to App</a>
                                     </div>
                                 </form>
                             </div>
@@ -45,17 +45,13 @@
             </section>
 
             <!-- logos -->
-            <!-- <section class="logos">
+<!--             <section class="logos">
                 <div class="container">
-                    <div><img src="img/logos/mashable.png" alt="">
+                    <div><img src="{{ URL::asset('assets/img/logos/mashable.png') }}" alt="">
                     </div>
-                    <div><img src="img/logos/guardian.png" alt="">
+                    <div><img src="{{ URL::asset('assets/img/logos/mashable.png') }}" alt="">
                     </div>
-                    <div><img src="img/logos/forbes.png" alt="">
-                    </div>
-                    <div><img src="img/logos/red-bull.png" alt="">
-                    </div>
-                    <div><img src="img/logos/ny-times.png" alt="">
+                    <div><img src="{{ URL::asset('assets/img/logos/mashable.png') }}" alt="">
                     </div>
                 </div>
             </section> -->
@@ -67,20 +63,21 @@
 <!--                     <p class="lead">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere.
                     </p> -->
+
                     <div class="row plans">
                         <div class="col-sm-4">
                             <div class="">
-                                <img src="{{ URL::asset('assets/img/mockup/menu.jpg') }}" class="img-responsive img-thumbnail">
+                                <img src="{{ URL::asset('assets/img/mockup/menu.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="">
-                                <img src="{{ URL::asset('assets/img/mockup/3.jpg') }}" class="img-responsive img-thumbnail">
+                                <img src="{{ URL::asset('assets/img/mockup/3.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="">
-                                <img src="{{ URL::asset('assets/img/mockup/4.jpg') }}" class="img-responsive img-thumbnail">
+                                <img src="{{ URL::asset('assets/img/mockup/4.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                     </div>
@@ -88,17 +85,17 @@
                     <div class="row plans">
                         <div class="col-sm-4">
                             <div class="">
-                                <img src="{{ URL::asset('assets/img/mockup/6.jpg') }}" class="img-responsive img-thumbnail">
+                                <img src="{{ URL::asset('assets/img/mockup/6.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="">
-                                <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}" class="img-responsive img-thumbnail">
+                                <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="">
-                                <img src="{{ URL::asset('assets/img/mockup/12.jpg') }}" class="img-responsive img-thumbnail">
+                                <img src="{{ URL::asset('assets/img/mockup/12.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                     </div>

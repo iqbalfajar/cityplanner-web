@@ -371,17 +371,17 @@ startupKit.uiKitHeader.header11 = function() {
     };
     startupKit.uiKitHeader._inFixedMode('.header-11');
 
-    $(window).resize(function() {
+    // $(window).resize(function() {
         
-        var player = $('.header-11-sub .player');
-        if ($(window).width() < 751) {
-            $('.header-11-sub .signup-form').before(player);
-            $('.header-11-sub .player-wrapper').hide();
-        } else {
-            $('.header-11-sub .player-wrapper').append(player);
-            $('.header-11-sub .player-wrapper').show();
-        }
-    });
+    //     var player = $('.header-11-sub .player');
+    //     if ($(window).width() < 751) {
+    //         $('.header-11-sub .signup-form').before(player);
+    //         $('.header-11-sub .player-wrapper').hide();
+    //     } else {
+    //         $('.header-11-sub .player-wrapper').append(player);
+    //         $('.header-11-sub .player-wrapper').show();
+    //     }
+    // });
 
 };
 
