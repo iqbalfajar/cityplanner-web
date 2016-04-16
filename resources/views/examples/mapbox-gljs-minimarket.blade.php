@@ -10,6 +10,9 @@
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.css' type='text/css' />
+
 </head>
 <body>
 
@@ -293,7 +296,8 @@ map.on('mousemove', function (e) {
 });
 
 //selesai copy
-
+map.addControl(new mapboxgl.Geocoder());
+// map.addControl(new mapboxgl.Navigation());
 
 </script>
 

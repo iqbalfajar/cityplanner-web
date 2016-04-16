@@ -10,9 +10,8 @@
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
-    <?php
-        header('X-Frame-Options: ALLOW-FROM http://google.com'); 
-    ?>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.css' type='text/css' />
 </head>
 <body>
 
@@ -212,6 +211,8 @@ map.on('click', function (e) {
 
     var feature = features[0];
 
+    // map.flyTo({center: features[0].geometry.coordinates});
+
     var popup = new mapboxgl.Popup()
         .setLngLat(map.unproject(e.point))
         .setHTML("<a href='https://www.google.com/#q="+feature.properties.kategori+"'>" + feature.properties.kategori + "</a>")
@@ -223,9 +224,17 @@ map.on('click', function (e) {
 map.on('mousemove', function (e) {
     var features = map.queryRenderedFeatures(e.point, { layers: ['Wisata_Buatan'] });
     map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+    // if (features.length) {
+    //     map.setFilter("route-hover", ["==", "name", features[0].properties.name]);
+    // } else {
+    //     map.setFilter("route-hover", ["==", "name", ""]);
+    // }
 });
 
 //selesai copy
+
+map.addControl(new mapboxgl.Geocoder());
+// map.addControl(new mapboxgl.Navigation());
 
 
 </script>
