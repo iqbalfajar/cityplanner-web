@@ -94,12 +94,12 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="img-row">
-                                <img src="{{ URL::asset('assets/img/mockup/9.jpg') }}" class="img-responsive img-rounded">
+                                <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="img-row">
-                                <img src="{{ URL::asset('assets/img/mockup/11.jpg') }}" class="img-responsive img-rounded">
+                                <img src="{{ URL::asset('assets/img/mockup/form_laporan.png') }}" class="img-responsive img-rounded">
                             </div>
                         </div>
                     </div>
