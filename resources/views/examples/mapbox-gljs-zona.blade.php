@@ -78,13 +78,13 @@ map.on('style.load', function () {
         url: 'mapbox://hanfiev.eb1497d8'
     });
 
-    map.addLayer({
+   map.addLayer({
         'id': 'Wisata_Buatan',
         'type': 'fill',
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(197,0,255,84)'
         },
         'source-layer': 'Wisata_Buatan'
 
@@ -96,7 +96,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,195,0,13)'
         },
         'source-layer': 'Transportasi'
 
@@ -108,7 +108,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(152,230,0,-45)'
         },
         'source-layer': 'Sempadan_SUTET'
 
@@ -120,7 +120,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(152,230,0,-45)'
         },
         'source-layer': 'Sempadan_Sungai'
 
@@ -132,7 +132,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(152,230,0,-45)'
         },
         'source-layer': 'Sempadan_Rel'
 
@@ -144,7 +144,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(152,230,0,-45)'
         },
         'source-layer': 'Sempadan_Jaringan_Jalan'
 
@@ -156,7 +156,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(85,255,0,-71)'
         },
         'source-layer': 'RTNH'
 
@@ -168,7 +168,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(85,255,0,-71)'
         },
         'source-layer': 'RTH_Taman_Kota'
 
@@ -180,7 +180,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(85,255,0,-71)'
         },
         'source-layer': 'RTH_Privat'
 
@@ -192,7 +192,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(85,255,0,-71)'
         },
         'source-layer': 'RTH_Plasma_Nutfah'
 
@@ -204,7 +204,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(85,255,0,-71)'
         },
         'source-layer': 'RTH_Pemakaman'
 
@@ -216,7 +216,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(85,255,0,-71)'
         },
         'source-layer': 'RTH_Pelestarian_Alam'
 
@@ -228,7 +228,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(85,255,0,-71)'
         },
         'source-layer': 'RTH_Hutan_Kota'
 
@@ -240,7 +240,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(249,0,0,79)'
         },
         'source-layer': 'Pusat_Perdagangan_Jasa'
 
@@ -252,7 +252,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,193,7,14)'
         },
         'source-layer': 'Perumahan_Kepadatan_Tinggi'
 
@@ -264,7 +264,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,152,9,34)'
         },
         'source-layer': 'Perumahan_Kepadatan_Rendah'
 
@@ -276,7 +276,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(198,245,128,-29)'
         },
         'source-layer': 'Pertanian'
 
@@ -288,7 +288,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(129,95,51,10)'
         },
         'source-layer': 'Pertahanan_Keamanan'
 
@@ -300,21 +300,21 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,195,0,13)'
         },
         'source-layer': 'Peribadatan'
 
     });
 
 map.addLayer({
-        'id': 'Perdagangan_Jasa_Linier',
+        'id': 'Perdagangan_Jasa_Linear',
         'type': 'fill',
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,61,0,72)'
         },
-        'source-layer': 'Perdagangan_Jasa_Linier'
+        'source-layer': 'Perdagangan_Jasa_Linear'
 
     });
 
@@ -324,7 +324,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(245,124,0,44)'
         },
         'source-layer': 'Pendidikan'
 
@@ -336,7 +336,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(249,0,0,79)'
         },
         'source-layer': 'Pasar_Tradisional'
 
@@ -348,7 +348,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(245,124,0,44)'
         },
         'source-layer': 'Kesehatan'
 
@@ -360,7 +360,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,139,253,56)'
         },
         'source-layer': 'Kantor_Pemerintahan'
 
@@ -372,7 +372,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(150,135,131,5)'
         },
         'source-layer': 'Industri'
 
@@ -384,7 +384,7 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,195,0,13)'
         },
         'source-layer': 'Gardu_Listrik'
 
@@ -396,11 +396,13 @@ map.addLayer({
         'source': 'Cibeunying',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(225,225,225,0)'
         },
         'source-layer': 'Campuran_Intensitas_Tinggi'
 
     });
+
+
 
 
     

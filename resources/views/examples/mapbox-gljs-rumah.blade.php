@@ -83,7 +83,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(249,0,0,79)'
         },
         'source-layer': 'Pusat_Perdagangan_Jasa'
 
@@ -95,7 +95,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,193,7,14)'
         },
         'source-layer': 'Perumahan_Kepadatan_Tinggi_3'
 
@@ -107,7 +107,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,193,7,14)'
         },
         'source-layer': 'Perumahan_Kepadatan_Tinggi_2'
 
@@ -119,7 +119,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,193,7,14)'
         },
         'source-layer': 'Perumahan_Kepadatan_Tinggi'
 
@@ -155,7 +155,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(129,95,51,10)'
         },
         'source-layer': 'Pertahanan_Keamanan'
 
@@ -167,7 +167,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,61,0,72)'
         },
         'source-layer': 'Perdagangan_Jasa_Linier'
 
@@ -179,7 +179,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(150,135,131,5)'
         },
         'source-layer': 'Industri'
 
@@ -191,7 +191,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(225,225,225,0)'
         },
         'source-layer': 'Campuran_Intensitas_Tinggi'
 

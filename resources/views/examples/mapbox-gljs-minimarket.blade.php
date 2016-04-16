@@ -84,7 +84,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(197,0,255,84)'
         },
         'source-layer': 'Wisata_Buatan'
 
@@ -96,7 +96,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,195,0,13)'
         },
         'source-layer': 'Transportasi'
 
@@ -108,7 +108,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(249,0,0,79)'
         },
         'source-layer': 'Pusat_Perdagangan_Jasa'
 
@@ -120,7 +120,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,193,7,14)'
         },
         'source-layer': 'Perumahan_Kepadatan_Tinggi_3'
 
@@ -132,7 +132,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,193,7,14)'
         },
         'source-layer': 'Perumahan_Kepadatan_Tinggi_2'
 
@@ -144,7 +144,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,193,7,14)'
         },
         'source-layer': 'Perumahan_Kepadatan_Tinggi'
 
@@ -180,7 +180,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,152,9,34)'
         },
         'source-layer': 'Perumahan_Kepadatan_Rendah'
 
@@ -192,7 +192,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,195,0,13)'
         },
         'source-layer': 'Peribadatan'
 
@@ -204,7 +204,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,61,0,72)'
         },
         'source-layer': 'Perdagangan_Jasa_Linier'
 
@@ -216,7 +216,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(245,124,0,44)'
         },
         'source-layer': 'Pendidikan'
 
@@ -228,7 +228,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(245,124,0,44)'
         },
         'source-layer': 'Kesehatan'
 
@@ -240,7 +240,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,139,253,56)'
         },
         'source-layer': 'Kantor_Pemerintahan'
 
@@ -252,7 +252,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(150,135,131,5)'
         },
         'source-layer': 'Industri'
 
@@ -264,7 +264,7 @@ map.on('style.load', function () {
         'source': 'minimarket',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(225,225,225,0)'
         },
         'source-layer': 'Campuran_Intensitas_Tinggi'
 
