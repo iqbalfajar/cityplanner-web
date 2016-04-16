@@ -8,9 +8,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4" style="color:white;">
-                            <h3 style="color:black;">City Plan - Watch and Build Your City</h3>
+                            <h3 style="color:black;">City Plan. Build and Watch Your City</h3>
                             <p style="color:white;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac porttitor dui. Ut maximus quis.
+                                The City Plan merupakan media pertama di Indonesia dalam membantu masyarakat yang ingin membangun sesuai peraturan yang berlaku dan menyediakan media masyarakat untuk ikut mengawasi pembangunan kota 
                             </p>
                             <div class="signup-form">
                                 <form action="{{URL::route('app')}}">
@@ -59,10 +59,10 @@
             <!-- price-1 -->
             <section id="features" class="price-1">
                 <div class="container">
-                    <h3>Features</h3>
-<!--                     <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere.
-                    </p> -->
+                    <h3>Build City</h3>
+                    <p class="lead">
+                        Membantu masyarakat yang ingin membangun sesuai dengan peraturan yang berlaku dengan menyediakan informasi yang mudah diakses dan mudah dipahami
+                    </p>
 
                     <div class="row plans">
                         <div class="col-sm-4">
@@ -82,6 +82,10 @@
                         </div>
                     </div>
                     <br>
+                    <h3>City Watch</h3>
+                    <p class="lead">
+                        Media masyarakat untuk membantu mengawasi pembangunan kota
+                    </p>
                     <div class="row plans">
                         <div class="col-sm-4">
                             <div class="img-row">
