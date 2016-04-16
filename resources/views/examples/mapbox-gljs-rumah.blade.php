@@ -131,7 +131,7 @@ map.on('style.load', function () {
         'source': 'Rumah Tunggal',
         'paint': {
             'fill-opacity': 0.4,
-            'fill-color': 'rgba(55,148,179,1)'
+            'fill-color': 'rgba(255,171,64,25)'
         },
         'source-layer': 'Perumahan_Kepadatan_Sedang'
 
