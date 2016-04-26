@@ -423,7 +423,7 @@ map.on('click', function (e) {
 
     var popup = new mapboxgl.Popup()
         .setLngLat(map.unproject(e.point))
-        .setHTML("<a href='https://www.google.com/#q="+feature.properties.kategori+"'>" + feature.properties.kategori + "</a>")
+        .setHTML("<a href='#/menu/zone-detail2/"+feature.properties.kode15+"' ng-click='triggerClick()' class='a-iframe'>" + feature.properties.kategori + "</a>")
         .addTo(map);
 });
 
