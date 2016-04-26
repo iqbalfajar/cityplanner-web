@@ -67,7 +67,7 @@ angular.module('app.routes', [])
   })
 
   .state('menu.detailZona', {
-    url: '/zone-detail',
+    url: '/zone-detail/:kegiatan/:kode',
     views: {
       'side-menu21': {
         templateUrl: 'templates/detailZona.html',
@@ -77,7 +77,7 @@ angular.module('app.routes', [])
   })
 
   .state('menu.detailZona2', {
-    url: '/zone-detail2',
+    url: '/zone-detail2/:kode',
     views: {
       'side-menu21': {
         templateUrl: 'templates/detailZona2.html',
@@ -102,6 +102,26 @@ angular.module('app.routes', [])
       'side-menu21': {
         templateUrl: 'templates/formLaporanPelanggaran2.html',
         controller: 'formLaporanPelanggaranCtrl'
+      }
+    }
+  })
+
+  .state('menu.map', {
+    url: '/map',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/map.html',
+        controller: 'mapCtrl'
+      }
+    }
+  })
+
+  .state('menu.profile', {
+    url: '/profile',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/profile.html',
+        controller: 'profileCtrl'
       }
     }
   })
