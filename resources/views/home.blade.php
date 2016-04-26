@@ -2,7 +2,7 @@
 
 @section('content-center')
         <section id="home" class="header-11-sub bg-midnight-blue">
-                <div class="background" style="-webkit-filter: blur(1px);">
+                <div class="background" style="-webkit-filter: blur(1px);filter: blur(1px);">
                     &nbsp;
                 </div>
                 <div class="container">
