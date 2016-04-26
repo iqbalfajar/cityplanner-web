@@ -12,12 +12,15 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('cityBuilderCtrl', function($scope) {
-
+.controller('cityBuilderCtrl', function($scope, Config, $sce) {
+  $scope.urlZonaRumah = $sce.trustAsResourceUrl(Config.getUrlZonaRumah());
+  $scope.urlZonaHotel = $sce.trustAsResourceUrl(Config.getUrlZonaHotel());
+  $scope.urlZonaMinimarket = $sce.trustAsResourceUrl(Config.getUrlZonaMinimarket());
 
 })
 
-.controller('cityWatchCtrl', function($scope) {
+.controller('cityWatchCtrl', function($scope, Config, $sce) {
+  $scope.urlZonaAll = $sce.trustAsResourceUrl(Config.getUrlZonaAll());
 
   $scope.data = { filterShow : false};
   var style = {
@@ -61,7 +64,6 @@ angular.module('app.controllers', [])
       }
     }
   })
-
 
 })
 
@@ -177,7 +179,7 @@ angular.module('app.controllers', [])
    $scope.showAlert = function() {
      var alertPopup = $ionicPopup.alert({
        title: 'Sukses!',
-       template: 'Terima kasih telah mengirim Laporan. Laporan Anda akan kami sampaikan ke Dinas terkait untuk segera diproses.'
+       template: 'Terima kasih telah mengirim laporan. Laporan Anda akan kami sampaikan ke Dinas terkait untuk segera diproses.'
      });
 
      alertPopup.then(function(res) {
@@ -186,8 +188,7 @@ angular.module('app.controllers', [])
        console.log('redirect to #/menu/zone-detail2/'+$scope.detail.Kode)
       
        // $location.path('#/menu/zone-detail2/'+$scope.detail.Kode);
-       $state.go("menu.detailZona2",{'kode':$scope.detail.Kode});
-       
+       // $state.go("menu.detailZona2",{'kode':$scope.detail.Kode}); 
      });
    };
 })
@@ -205,11 +206,8 @@ angular.module('app.controllers', [])
       $(".showmore").hide();
       $(".showless").show();
     }
-  }  
-})
-
-.controller('formLaporanPelanggaran2Ctrl', function($scope) {
-
+  }
+    
 })
 
 .controller('mapCtrl', function($scope) {
