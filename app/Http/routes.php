@@ -16,6 +16,11 @@ Route::get('/', array(
     'uses' => 'HomeController@getIndex'
 ));
 
+Route::get('/v2', array(
+    'as' => 'app.v2',
+    'uses' => 'AppController@getV2'
+));
+
 Route::group(array('prefix' => 'examples'), function(){
     Route::get('/', array(
         'as' => 'examples.index',
